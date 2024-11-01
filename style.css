@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #E6E5EB;
+
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 210px;
+}
+
+.navbar .logo {
+  color: black;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #C06B3E;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #C06B3E;
+}
+
+.tittle_ h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+/*  hero setion css*/
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 91vh;
+  background-image: url('assets/beautiful-view-field-covered-green-grass-captured-canggu-bali.jpg');
+  /* Replace with your own image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover effect */
+.hero-section:hover h1 {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Introduction Section */
+.intro-section {
+  height: 50vh;
+  padding: 40px;
+  /* background-color: #ffffff; */
+  background-image: url(assets//flat-lay-food-frame-with-grains-copy-space.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.intro-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  /* color: rgb(173, 165, 165); */
+  transition: color 0.3s ease;
+}
+
+.intro-section h2:hover {
+  color: #388E3C;
+}
+
+.intro-section p {
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 15px;
+}
+
+/* css  for history of hybrid seeds*/
+/* Container Styling */
+.intro_container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Header */
+.intro_section-header {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #e0f7e9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Timeline Styling */
+.timeline {
+  padding: 20px;
+  border-left: 3px solid #4CAF50;
+  position: relative;
+}
+
+.timeline-item {
+  margin: 20px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  color: #388E3C;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.timeline-year:hover {
+  color: #2E7D32;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/*css for adtoptation */
+
+/* Container Styling */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.section-header:hover {
+  color: #388E3C;
+}
+
+/* Content Section */
+.content-section {
+  padding: 15px 20px;
+  background-color: #e0f7e9;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Subheading */
+.subheading {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.subheading:hover {
+  color: #2E7D32;
+}
+
+/* Paragraph Styling */
+.content-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* css for  the graphical repretation*/
+/* Container Styling */
+.graph_container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Section Styling */
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #e0f7e9;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+/* Chart Container */
+.chart-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+/* css for conclusion*/
+/* Main Container Styling */
+.conc_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Header Styling */
+.conc_container h1 {
+  font-size: 2em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.conc_container h3 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+.conc_container p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* Key Points List */
+.conc_container ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.conc_container ul li {
+  margin: 5px 0;
+}
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #388E3C;
+}
+/* css for tool*/
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+} */
+
+.comparison_tool .container {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.comparison_tool h2 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+.selection, .calculator {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+.comparison-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 48%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #388e3c;
+}
+
+.impact-calculator {
+  background: #f1f8e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.calculate_btn button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.calculate_btn button:hover {
+  background: #388e3c;
+}
