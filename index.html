@@ -206,61 +206,73 @@
             stewardship. Encouraging a diversified approach to crop cultivation can help safeguard India's agricultural
             biodiversity while still meeting the country’s food production needs.</p>
 
-          <a href="index.html" class="cta-button">Back to Home</a>
+          <!-- <a href="index.html" class="cta-button">Back to Home</a> -->
         </div>
       </section>
       <section class="comparison_tool">
         <div class="container">
           <h2>Interactive Seed Comparison Tool</h2>
-      
+
           <!-- Seed Comparison Interface -->
           <div class="selection">
-              <label for="cropSelect">Select a Crop:</label>
-              <select id="cropSelect" class="dropdown" onchange="updateComparison()">
-                  <option value="wheat">Wheat</option>
-                  <option value="rice">Rice</option>
-                  <option value="corn">Corn</option>
-                  <!-- Add more crop options as needed -->
-              </select>
+            <label for="cropSelect">Select a Crop:</label>
+            <select id="cropSelect" class="dropdown" onchange="updateComparison()">
+              <option value="">Select</option>
+              <option value="wheat">Wheat</option>
+              <option value="rice">Rice</option>
+              <option value="corn">Maize (Corn)</option>
+              <option value="barley">Barley</option>
+              <option value="soyabean">Soyabean</option>
+              <option value="millet">Millet</option>
+              <option value="cotton">Cotton</option>
+              <option value="tomato">Tomato</option>
+              <option value="potato">Potato</option>
+              <option value="sunflower">Sunflower</option>
+              <option value="sugercane">Sugercane</option>
+              <option value="green_gram">Green Gram (Mung Bean)</option>
+              <option value="black_gram"> Black Gram (Urad Bean)</option>
+              <!-- Add more crop options as needed -->
+            </select>
           </div>
-      
+
           <div class="comparison-cards">
-              <div class="card native">
-                  <h3>Native Variety</h3>
-                  <p>Yield: <span id="nativeYield">TBD</span></p>
-                  <p>Resistance: <span id="nativeResistance">TBD</span></p>
-                  <p>Environmental Impact: <span id="nativeImpact">TBD</span></p>
-                  <p>Economic Factors: <span id="nativeEconomic">TBD</span></p>
-              </div>
-              
-              <div class="card hybrid">
-                  <h3>Hybrid Variety</h3>
-                  <p>Yield: <span id="hybridYield">TBD</span></p>
-                  <p>Resistance: <span id="hybridResistance">TBD</span></p>
-                  <p>Environmental Impact: <span id="hybridImpact">TBD</span></p>
-                  <p>Economic Factors: <span id="hybridEconomic">TBD</span></p>
-              </div>
+            <div class="card native">
+              <h3>Native Variety</h3>
+              <p>Yield: <span id="nativeYield">TBD</span></p>
+              <p>Resistance: <span id="nativeResistance">TBD</span></p>
+              <p>Environmental Impact: <span id="nativeImpact">TBD</span></p>
+              <p>Economic Factors: <span id="nativeEconomic">TBD</span></p>
+            </div>
+
+            <div class="card hybrid">
+              <h3>Hybrid Variety</h3>
+              <p>Yield: <span id="hybridYield">TBD</span></p>
+              <p>Resistance: <span id="hybridResistance">TBD</span></p>
+              <p>Environmental Impact: <span id="hybridImpact">TBD</span></p>
+              <p>Economic Factors: <span id="hybridEconomic">TBD</span></p>
+            </div>
           </div>
       </section>
-      <section class="impact_calculator">
-        <!-- Impact Calculator -->
-    <div class="impact-calculator">
-      <h3>Impact Calculator</h3>
-      <label for="region">Enter Region:</label>
-      <input type="text" id="region" class="dropdown" placeholder="e.g., Punjab">
-      
-      <label for="rainfall">Average Rainfall (mm):</label>
-      <input type="number" id="rainfall" class="dropdown" placeholder="e.g., 500">
-      
-      <label for="soil">Soil Type:</label>
-      <input type="text" id="soil" class="dropdown" placeholder="e.g., Loamy">
-      <div class="calculate_btn">
-      <button onclick="calculateImpact()">Calculate Impact</button>
+      <!-- <section class="impact_calculator">
+        Impact Calculator -->
+        <!-- <div class="impact-calculator">
+          <h3>Impact Calculator</h3>
+          <label for="region">Enter Region:</label>
+          <input type="text" id="region" class="dropdown" placeholder="e.g., Punjab">
+
+          <label for="rainfall">Average Rainfall (mm):</label>
+          <input type="number" id="rainfall" class="dropdown" placeholder="e.g., 500">
+
+          <label for="soil">Soil Type:</label>
+          <input type="text" id="soil" class="dropdown" placeholder="e.g., Loamy">
+          <div class="calculate_btn">
+            <button onclick="calculateImpact()">Calculate Impact</button>
+          </div>
+          <p id="impactResult">Impact Result: <span>TBD</span></p>
+        </div>
     </div>
-      <p id="impactResult">Impact Result: <span>TBD</span></p>
-  </div>
-</div>
-      </section>
+    </section> -->
+    <a href="index.html" class="cta-button">Back to Home</a>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
